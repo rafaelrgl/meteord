@@ -6,9 +6,9 @@ apt-get -y install libsqlite3-dev libfontconfig1-dev libicu-dev libssl-dev
 apt-get -y install libpng-dev libjpeg-dev python libx11-dev libxext-dev
 echo "deb http://us-west-2.ec2.archive.ubuntu.com/ubuntu/ trusty multiverse
 deb http://us-west-2.ec2.archive.ubuntu.com/ubuntu/ trusty-updates multiverse
-deb http://us-west-2.ec2.archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe multiverse" | sudo tee /etc/apt/sources.list.d/multiverse.list
-apt-get update
-apt-get install ttf-mscorefonts-installer
+deb http://us-west-2.ec2.archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe multiverse" | tee /etc/apt/sources.list.d/multiverse.list
+apt-get -y update
+apt-get -y install ttf-mscorefonts-installer
 
 ARCH=`uname -m`
 PHANTOMJS_VERSION=2.1.1
