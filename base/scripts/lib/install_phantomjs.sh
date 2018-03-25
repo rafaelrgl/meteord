@@ -1,8 +1,11 @@
 # Install PhantomJS
 set -e
-apt-get -y install libfreetype6 libfreetype6-dev fontconfig
+sudo apt-get install build-essential g++ flex bison gperf ruby perl \
+sudo apt-get install libsqlite3-dev libfreetype6 libfontconfig1-dev libicu-dev libfreetype6 libssl-dev \
+sudo apt-get install libpng-dev libjpeg-dev python libx11-dev libxext-dev ttf-mscorefonts-installer
+
 ARCH=`uname -m`
-PHANTOMJS_VERSION=1.9.8
+PHANTOMJS_VERSION=2.1.1
 PHANTOMJS_TAR_FILE=phantomjs-${PHANTOMJS_VERSION}-linux-${ARCH}.tar.bz2
 
 cd /usr/local/share/
