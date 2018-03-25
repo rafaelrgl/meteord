@@ -1,7 +1,7 @@
 # Install PhantomJS
 set -e
 apt-get -y install libfreetype6 libfreetype6-dev fontconfig
-sudo apt-get install -y build-essential g++ flex bison gperf ruby perl \
+sudo apt-get install -y build-essential g++ flex bison gperf ruby perl
 sudo apt-get install -y libsqlite3-dev libfontconfig1-dev libicu-dev libssl-dev
 sudo apt-get install -y libpng-dev libjpeg-dev python libx11-dev libxext-dev ttf-mscorefonts-installer
 
